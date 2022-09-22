@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Conferencia Buenos Aires </title>
+    <title> Conf. Bs. As. </title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="proyecto_estilo.css">
 </head>
 <body>
-     <header>
-     <img src="./images/codoacodo.png" alt="Logo de codo a codo"> <h2> Conferencia Bs.As. </h2>
-     <br>
-         <nav> <a href="#"> La conferencia </a>
-         <a href="./Pages/los_oradores.html"> Los oradores </a>
-         <a href="./Pages/lugaryfecha.html"> El lugar y la fecha </a>
-         <a href="./Pages/contacto.html"> Conviértete en orador </a>
-         <a href="./Pages/comprar_tickets.html"> Comprar tickets</a> 
+     <header class="header">
+     <div class="logo"> <img id="codo_a_codo" src="./images/codoacodo.png" alt="Logo de codo a codo"> 
+    <h2 class="Conf"> Conf Bs As </h2> </div>
+         <nav class= "nav"> 
+          <a href="#" class="ancla"> La conferencia </a>
+         <a class="ancla" href="./Pages/los_oradores.html"> Los oradores </a>
+         <a class="ancla" href="./Pages/lugaryfecha.html"> El lugar y la fecha </a>
+         <a class="ancla" href="./Pages/contacto.html"> Conviértete en orador </a>
+         <a class="ancla" id="ComprarTickets" href="./Pages/comprar_tickets.html"> Comprar tickets</a> 
          </nav>  
      </header>
-    <br>
-
   <main> 
-    <section> 
-        <img src="./images/ba1.jpg" alt="Imagen de Buenos Aires">
+    <section class="imagenprincipal"> 
+      <div class="TextoCentral">
         <h1> Conf Bs As </h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi earum quis! Libero vitae amet, eaque minima esse saepe a blanditiis quo nisi. Tempora et corrupti iusto sed, aperiam excepturi?</p>
-        <a href="./Pages/contacto.html"> Quiero ser orador </a>
-        <a href="./Pages/comprar_tickets.html"> Comprar tickets </a> 
+        <p> Llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Vení a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel. ¡Te esperamos!  </p>
+        <div class="links"> <a class="ancla2" href="./Pages/contacto.html"> Quiero ser orador </a>
+        <a class="ancla3" href="./Pages/comprar_tickets.html"> Comprar tickets </a> </div>
+       </div>
     </section> 
   </main>
- 
   <section>
-     <div> 
+
+     <div> <h2> CONOCÉ A LOS ORADORES</h2>
      <img src="./images/steve.jpg" alt="Steve Jobs" width="300" >
      <h3> Steve Jobs </h3>
      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quaerat odio repellendus esse in libero nisi at ducimus tempore quidem ut repudiandae fuga ullam quisquam autem maiores molestiae voluptatibus hic!</p>
@@ -56,45 +57,20 @@
 
  </section> 
  <br>
-   <section> 
-<img src="./images/honolulu.jpg" alt="Imagen de Honolulu" width="200">
-<div>
-    <h3> Bs. As. Octubre </h3>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus amet accusamus magni eius inventore quam deserunt ut hic dolorum nostrum distinctio repellendus, odit labore atque sit, dicta dolore esse asperiores.</p>
-    <a href=""> Conocé más </a>
+   <section class="imagendividida"> 
+
+    <div class="imagenBA"> 
+  
+    </div>
+
+<div class="textoimagendividida">
+     <h3> Bs. As.- Octubre </h3>
+    <p> Buenos Aires es conocida como Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (también llamada Capital Federal, por ser la sede del gobierno nacional). Es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos del país. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana.</p> 
+    <a href="https://es.wikipedia.org/wiki/Buenos_Aires" id="ancla4"> Conocé más </a>
 </div>
    </section>
 
-   <section>
-    <table>
-      <thead>
-      <tr>
-        <th> Nombre </th>
-        <th> Día </th>
-        <th> Horario </th>
-      </tr>
-    </thead>
-
-    <tbody>
-     <tr>
-      <td> Steve Jobs </td>
-     <td> Lunes </td>
-     <td></td></tr>
-    <tr>
-      <td> Bill Gates </td>
-      <td> Martes</td>
-      <td> 12:30 </td>
-    </tr>
-    <tr>
-      <td> Ada Lovelace </td>
-      <td> Miércoles </td>
-      <td> 13:30 hs. </td>
-    </tr>
-  </tbody>
-  </table>
-   </section>
-
-   <Footer>
+    <Footer class="pie">
     <a href=""> Preguntas frecuentes </a>
     <a href=""> Contáctanos </a>
     <a href=""> Prensa </a>
