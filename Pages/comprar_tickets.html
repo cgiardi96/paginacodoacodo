@@ -82,24 +82,24 @@
           <section class="formulario ">
           <div class="row m-0">
             <div class="col">
-              <input type="text" class="etiqueta" placeholder="Nombre" id="Nombre">
+              <input type="text" class="label" placeholder="Nombre" id="Nombre">
             </div>
             <div class="col">
-              <input type="text" class="etiqueta" placeholder="Apellido" id="Apellido">
+              <input type="text" class="label" placeholder="Apellido" id="Apellido">
             </div>
           </div>
 
           <br>
           <div class= "row m-0">
-            <input type="email" class="etiqueta" placeholder="Email" id="Email">
+            <input type="email" class="label" placeholder="Email" id="Email">
           </div>
         
           <div class="row g-2 m-0"> 
 
-            <div class= "col-md text-start"><label class="form-label" id="Cantidad"> Cantidad </label>
-           <input class="etiqueta"> </div>
+            <div class= "col-md text-start"><label class="form-label" id="Cantidad" placeholder="Cantidad"> Cantidad </label>
+           <input class="label"> </div>
 
-          <div class= "col-md text-start"> <label class="form-label" id="Categoria">Categoría</label>
+          <div class= "col-md text-start"> <label class="form-label" id="Categoria" placeholder="Categoria">Categoría</label>
           <select class="form-select" aria-label="Default select example">
             <option value= "" selected>--Seleccione--</option>
             <option value="0">Sin Categoría</option>
@@ -114,14 +114,14 @@
           <br>
 
           <div class="d-grid">
-            <button class="pago text-start" type="button"> Total a pagar: $</button>
+            <button class="pago text-start" id="total" type="button"> Total a pagar: $</button>
           </div>
         
           <br>
           
           <div class="flex-row"> 
-        <button type="button" class="btn text-white" style="width: 49%; height: fit-content;">Borrar</button>
-        <button type="button" class="btn text-white" style="width: 49%; height: fit-content;">Resumen</button>
+        <button type="button" class="btn text-white" id= "btnBorrar" style="width: 49%; height: fit-content;">Borrar</button>
+        <button type="button" class="btn text-white" id="btnResumen" style="width: 49%; height: fit-content;">Resumen</button>
           </div>
         
 

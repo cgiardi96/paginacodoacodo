@@ -1,35 +1,40 @@
-const valorTicket = 200;
+const valorTicket =200;
 
-let descuentoEstudiantes= 80;
-let descuentoTrainee= 50;
-let descuentoJunior=15;
+var descuentoEstudiantes=80;
+var descuentoTrainee=50;
+var descuentoJunior=15;
 
-let nombre= document.getElementById ("Nombre");
-let apellido= document.getElementById ("Apellido");
-let email= document.getElementById ("Email");
-let cantidadDeTickets= document.getElementById ("Cantidad");
-let categoria= document.getElementById ("Categoria")
+var nombre= document.getElementById ("Nombre");
+var  apellido= document.getElementById ("Apellido");
+var email= document.getElementById ("Email");
+var cantidadTickets= document.getElementById ("Cantidad");
+var categoria= document.getElementById ("Categoria")
 
 function quitarClaseError  () {
-    let x= document.querySelectorAll (".form-control, .form-label, .etiqueta");
+    let x= document.querySelectorAll (".form-control, .form-label, .label");
     let i;
     for (i=0; i < x.length; i++) {
         x [i] .classList.remove ('is-invalid');
     }
 }
+
+function borrarTodo () {
+    quitarClaseError ();
+    totalPagar.innerHTML= "";
+}
+
 function totalPagar () {
+     quitarClaseError ();
 
-    quitarClaseError()
-
-    if (nombre.value == "") {
-        alert ("Escribí tu nombre");
+    if (nombre.value === "") {
+        alert ('Escribí tu nombre');
         nombre.classList.add ("is-invalid");
         nombre.focus ();
         return;
     }
-    
+
     if (apellido.value === "") {
-        alert ("Escribí tu apellido");
+        alert ('Escribí tu apellido');
         apellido.classList.add ("is-invalid");
         apellido.focus ();
         return;
@@ -37,46 +42,54 @@ function totalPagar () {
 
     
     if (email.value === "") {
-        alert ("Escribí tu email");
+        alert ('Escribí tu email');
         email.classList.add ("is-invalid");
         email.focus ();
         return;
     }
 
  
-
     const emailValido = email => {
-        return /\S+@\S+\.\S+/.test (mail);         
+        return /\S+@\S+\.\S+/.test (email);         
     }
+
     if (!emailValido (email.value)) {
-        alert ("Escribí un correo electrónico válido")
+        alert ('Escribí un correo electrónico válido')
         email.classList.add ("is-invalid")
         email.focus ();
         return;
     }
-
        
-    if (cantidadDeTickets.value === "") {
-        alert ("Ingresá una cantidad válida");
-        cantidadDeTickets.classList.add ("is-invalid");
-        cantidadDeTickets.focus ();
+    if (cantidadTickets.value ===""|| NaN) {
+            alert ('Ingresá una cantidad válida');
+        cantidadTickets.classList.add ("is-invalid");
+        cantidadTickets.focus ();
         return;
     }
    
        
-    if (categoria.value === "") {
-        alert ("Seleccioná una categoría");
+    if (categoria.value ==="") {
+        alert ('Seleccioná una categoría');
         categoria.classList.add ("is-invalid");
         categoria.focus ();
         return;
     }
-}
 
-switch (totalPagar) {
-case "categoria.value= 0": (totalValorTickets = totalValorTickets);
+var totalValorTickets = (cantidadTickets.value) * valorTicket;
+
+switch (totalValorTickets) {
+case "value= 0": totalValorTickets = totalValorTickets;
 break
-case "categoria.value= 1": (totalValorTickets= totalValorTickets - (descuentoEstudiantes / 100 * totalValorTickets))
-
+case "value= 1": totalValorTickets= totalValorTickets - (descuentoEstudiantes / 100 * totalValorTickets);
 break 
+case "value=2": totalValorTickets= totalValorTickets - (descuentoTrainee /100 * totalValorTickets);
+break
+case "value=3": totalValorTickets= totalValorTickets - (descuentoJunior /100 * totalValorTickets);
+
+total.innerHTML = totalValorTickets;
 
 }
+}
+
+btnResumen.addEventListener ('click', totalPagar)
+btnBorrar.addEventListener ('click', borrarTodo)
