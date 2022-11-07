@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conf. Bs. As. </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/tickets_estilo.css">
+
+      
+</head>
+
+<body>
+<header class="header">
+      <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+             <a class="navbar-brand text-white Conf" href="#"> <img id="codo_a_codo" src="../images/codoacodo.png" alt="Logo de codo a codo"> Conf Bs As</a>
+
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+      <div class="collapse.navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active ancla text-muted" aria-current="page" href="../index.html">La conferencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ancla text-muted" href="../index.html">Los oradores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ancla text-muted" href="../index.html">El lugar y la fecha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ancla text-muted" href="../index.html">Conviértete en orador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ancla text-white" id="ComprarTickets" href="#"> Comprar tickets </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></header>
+
+     <section class="grupodetarjetas" >
+      <div class="card bordeuno mb-3">
+        <h5 class="card-header text-center text-white uno"> Estudiante</h5>
+        <div class="card-body text-center">
+          <h6 class="card-title"> Tiene un descuento </h6>
+          <h4> 80% </h4>
+          <p class="card-text text-muted">*Presentar documentación </p>
+        </div>
+      </div>
+      <div class="card bordedos mb-3">
+        <h5 class="card-header text-center text-white dos"> Trainee </h5>
+        <div class="card-body text-center">
+          <h6 class="card-title"> Tiene un descuento</h6>
+          <h4> 50% </h4>
+          <p class="card-text text-muted">*Presentar documentación </p>
+        </div>
+      </div>
+      <div class="card bordetres mb-3">
+        <h5 class="card-header text-white text-center tres"> Junior </h5>
+        <div class="card-body text-center">
+          <h6 class="card-title"> Tiene un descuento </h6>
+          <h4> 15% </h4>
+          <p class="card-text text-muted">*Presentar documentación </p>
+        </div>
+      </div>
+
+        </section>
+
+
+<section class="seccionformulario">       
+          <div class="text-center">
+          <h6> VENTA </h6>
+          <h2 class="fw-bolder"> VALOR DE TICKET $200</h2> </div>
+
+          <section class="formulario ">
+          <div class="row m-0">
+            <div class="col">
+              <input type="text" class="etiqueta" placeholder="Nombre" id="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="etiqueta" placeholder="Apellido" id="Apellido">
+            </div>
+          </div>
+
+          <br>
+          <div class= "row m-0">
+            <input type="email" class="etiqueta" placeholder="Email" id="Email">
+          </div>
+        
+          <div class="row g-2 m-0"> 
+
+            <div class= "col-md text-start"><label class="form-label" id="Cantidad"> Cantidad </label>
+           <input class="etiqueta"> </div>
+
+          <div class= "col-md text-start"> <label class="form-label" id="Categoria">Categoría</label>
+          <select class="form-select" aria-label="Default select example">
+            <option value= "" selected>--Seleccione--</option>
+            <option value="0">Sin Categoría</option>
+            <option value="1"> Estudiante </option>
+            <option value="2">Trainee</option>
+            <option value="3">Junior</option>
+          </select>
+          </div>
+
+           </div>
+
+          <br>
+
+          <div class="d-grid">
+            <button class="pago text-start" type="button"> Total a pagar: $</button>
+          </div>
+        
+          <br>
+          
+          <div class="flex-row"> 
+        <button type="button" class="btn text-white" style="width: 49%; height: fit-content;">Borrar</button>
+        <button type="button" class="btn text-white" style="width: 49%; height: fit-content;">Resumen</button>
+          </div>
+        
+
+     </section>
+
+    </section>
+
+     <Footer class="pie justify-content-lg-between container-fluid position-staticustify-content-center">
+        <a href="../Pages/Link.html"  class="ancla foot col-1 me-2"> Preguntas frecuentes </a>
+        <a href="../Pages/Link.html" class="ancla foot"> Contáctanos </a>
+        <a href="../Pages/Link.html" class="ancla foot"> Prensa </a>
+        <a href="../Pages/Link.html" class="ancla foot"> Conferencias </a>
+        <a href="../Pages/Link.html" class="ancla foot col-2"> Términos y condiciones </a>
+        <a href="../Pages/Link.html" class="ancla foot"> Privacidad </a>
+        <a href="../Pages/Link.html" class="ancla foot"> Estudiantes </a>
+       </Footer>
+
+      <script src="./main.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,291 @@
+.header {
+    display: flex;
+    background-color:#353A40;
+    padding-left: 4em;
+   
+}
+
+.nav {
+    display: flex;
+    margin-left: 4.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+
+
+#codo_a_codo {
+display: flex;
+width: 29%;
+align-items: flex-end;
+
+}
+
+.Conf {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.ancla {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ancla:hover {
+    transform: scale(110%);
+}
+
+#ComprarTickets {
+    color: white;
+    background-color: #27A843;
+    border-radius: 0.75em;
+}
+
+
+.ancla2 {
+    text-decoration: none;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-around;
+    border: 0.5px solid white ;
+    border-radius: 5%;
+    color: white;
+    padding: 4px;
+    
+
+}
+.ancla3 {
+    text-decoration: none;
+    text-align:center;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-around;
+    background-color: rgb(33, 167, 93);
+    border: 0.5px solid rgb(33, 167, 93);
+    border-radius: 5%;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+}
+
+.row {
+    display: flexbox;
+    margin-left: 5%;
+    justify-content:flex-start;
+    }
+
+
+
+#ancla4 {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px;
+
+}
+
+
+
+
+.grupodetarjetas {
+    display: flex;
+    width: 50%;
+    height: 30vh;
+    box-sizing: border-box;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+    justify-content:space-between;
+    padding: 0;
+    margin: auto;
+    
+}
+
+.card 
+{
+    border-radius: 0.225rem;
+    width: 31%;
+
+}
+
+.bordeuno {
+    border-color: #0D6EFD;
+}
+
+.bordedos {
+    border-color: #0DCAF0;
+}
+
+.bordetres {
+    border-color:#FFC107;
+}
+.card-text {
+    font-size: 0.8em;
+}
+
+
+.uno {
+    position: relative;
+    background-color: #0D6EFD;
+    padding: 0.7;
+
+}
+
+.dos {
+    position: relative;
+    background-color: #0DCAF0; 
+    padding: 0.7;
+}
+
+.tres {
+    position: relative;
+    background-color: #FFC107; 
+    padding: 0.7;
+}
+
+
+.btn {
+    background-color: #96C93E;
+
+}
+.pago {
+    background-color: #CFE2FF;
+    border-color: #B6D4FE;
+    border-radius: 0.375rem;
+    height: 3em;
+    color: #0D6EFD;
+    }
+
+.seccionformulario {
+    position: relative;
+    top: 30px;
+}
+
+.formulario {
+display: flex;
+flex-direction: column;
+position: relative;
+left:0;
+width: 50%;
+margin: auto;
+padding: 0;
+margin-bottom: 2em;
+
+}
+.etiqueta {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #33363a;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.175rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          
+}
+
+.row {
+    --bs-gutter-x: 2px;
+    justify-content: space-between;
+}
+
+.pie {
+    display: flex;
+    height: 15vh;
+    width:100%;
+    background: linear-gradient(90deg, rgba(26,55,69,1) 18%, rgba(29,67,88,1) 26%, rgba(31,82,113,1) 35%);
+    align-items: center;
+    color: aliceblue;  
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 1.2;
+    position: relative;
+    top: 16px;
+}
+
+@media (max-width: 650px) {
+    .header {
+    padding-left: 0.2em;
+    height: fit-content;
+  }
+
+  #codo_a_codo {
+    display: flex;
+    width:5em;
+    
+    }
+    
+    .navbar-toggler {
+        margin-left: 3.6cm;
+    
+    }
+
+.links {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grupodetarjetas {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    padding: 0;
+
+}
+
+.card 
+{
+    border-radius: 0.225rem;
+    width: 100%
+
+}
+
+.seccionformulario {
+    position: relative;
+    top: 320px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:0;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 2em;
+    
+    }
+.pie {
+
+    display: table-footer-group;
+    position: relative;
+    top: 300px;
+    text-align: center;
+    align-content: flex-end;
+    height: 7vh;
+    width:100%;
+
+}
+}
