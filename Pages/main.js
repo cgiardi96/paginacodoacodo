@@ -9,7 +9,7 @@ var  apellido= document.getElementById ("Apellido");
 var email= document.getElementById ("Email");
 var cantidadTickets= document.getElementById ("Cantidad");
 var categoria= document.getElementById ("Categoria");
-var total= document.getElementById ("Total");
+var total= document.getElementById ("total");
 
 function quitarClaseError  () {
     let x= document.querySelectorAll (".form-control, .form-label, .label");
@@ -76,22 +76,24 @@ function totalPagar () {
         return;
     }
 
-var totalValorTickets = (cantidadTickets.value) * valorTicket;
+    var totalValorTickets = (cantidadTickets.value) * valorTicket;
 
 
-switch (totalValorTickets) {
-case "value= 0": totalValorTickets = totalValorTickets;
-break
-case "value= 1": totalValorTickets= totalValorTickets - (descuentoEstudiantes / 100 * totalValorTickets);
-break 
-case "value=2": totalValorTickets= totalValorTickets - (descuentoTrainee /100 * totalValorTickets);
-break
-case "value=3": totalValorTickets= totalValorTickets - (descuentoJunior /100 * totalValorTickets);
+switch (categoria.value) {
+    case "0": totalValorTickets = totalValorTickets;
+    break
+    case "1": totalValorTickets= totalValorTickets - (descuentoEstudiantes / 100 * totalValorTickets);
+    break 
+    case "2": totalValorTickets= totalValorTickets - (descuentoTrainee /100 * totalValorTickets);
+    break
+    case "3": totalValorTickets= totalValorTickets - (descuentoJunior /100 * totalValorTickets);
+    break 
+}
 
-total.innerHTML = totalValorTickets;
+    total.innerHTML = "Total a pagar: $" + totalValorTickets;
 
 }
-}
+
 
 btnResumen.addEventListener ('click', totalPagar)
 btnBorrar.addEventListener ('click', borrarTodo)
