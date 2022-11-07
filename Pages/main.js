@@ -8,7 +8,8 @@ var nombre= document.getElementById ("Nombre");
 var  apellido= document.getElementById ("Apellido");
 var email= document.getElementById ("Email");
 var cantidadTickets= document.getElementById ("Cantidad");
-var categoria= document.getElementById ("Categoria")
+var categoria= document.getElementById ("Categoria");
+var total= document.getElementById ("Total");
 
 function quitarClaseError  () {
     let x= document.querySelectorAll (".form-control, .form-label, .label");
@@ -76,6 +77,7 @@ function totalPagar () {
     }
 
 var totalValorTickets = (cantidadTickets.value) * valorTicket;
+
 
 switch (totalValorTickets) {
 case "value= 0": totalValorTickets = totalValorTickets;
